@@ -1,0 +1,395 @@
+/* ========================================
+   SIDEBAR WIDGETS STYLES
+   Popular Posts, Software, Games widgets
+   ======================================== */
+
+/* Base Widget Styles */
+.sidebar-widget {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.sidebar-widget:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.widget-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #f59e0b;
+}
+
+/* Popular Posts Widget */
+.widget-popular-posts {
+    /* Inherits from sidebar-widget */
+}
+
+.popular-post-item {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.popular-post-item:hover {
+    background: #f8fafc;
+}
+
+.popular-post-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.popular-post-item a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.popular-post-item .post-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.popular-post-item:hover .post-thumb {
+    transform: scale(1.05);
+}
+
+.popular-post-item .post-info {
+    flex: 1;
+}
+
+.popular-post-item h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    color: #1e293b;
+    transition: color 0.3s ease;
+}
+
+.popular-post-item:hover h4 {
+    color: #3b82f6;
+}
+
+.popular-post-item .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.popular-post-item .post-meta span {
+    display: inline-block;
+}
+
+.popular-post-item .post-meta .category {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.125rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.popular-post-item .post-meta .date {
+    display: flex;
+    align-items: center;
+}
+
+.popular-post-item .post-meta .date::before {
+    content: '📅';
+    margin-right: 0.25rem;
+}
+
+.popular-post-item .post-meta .comments {
+    display: flex;
+    align-items: center;
+}
+
+.popular-post-item .post-meta .comments::before {
+    content: '💬';
+    margin-right: 0.25rem;
+}
+
+/* Popular Software Widget */
+.widget-popular-software {
+    /* Inherits from sidebar-widget */
+}
+
+.popular-software-item {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: transform 0.3s ease;
+}
+
+.popular-software-item:hover {
+    transform: translateX(5px);
+}
+
+.popular-software-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.popular-software-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.popular-software-item .software-thumb {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.popular-software-item:hover .software-thumb {
+    transform: scale(1.02);
+}
+
+.popular-software-item h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    color: #1e293b;
+}
+
+.popular-software-item .software-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.popular-software-item .version-badge,
+.popular-software-item .size-badge,
+.popular-software-item .download-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.popular-software-item .version-badge {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.popular-software-item .size-badge {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.popular-software-item .download-badge {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.popular-software-item .download-badge::before {
+    content: '⬇️ ';
+}
+
+/* Popular Games Widget */
+.widget-popular-games {
+    /* Inherits from sidebar-widget */
+}
+
+.popular-game-item {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: transform 0.3s ease;
+}
+
+.popular-game-item:hover {
+    transform: translateX(5px);
+}
+
+.popular-game-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.popular-game-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.popular-game-item .game-cover {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.popular-game-item:hover .game-cover {
+    transform: scale(1.02);
+}
+
+.popular-game-item h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    color: #1e293b;
+}
+
+.popular-game-item .game-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.popular-game-item .size-badge,
+.popular-game-item .platform-badge,
+.popular-game-item .views-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.popular-game-item .size-badge {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.popular-game-item .platform-badge {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.popular-game-item .views-badge {
+    background: #fce7f3;
+    color: #9f1239;
+}
+
+.popular-game-item .views-badge::before {
+    content: '👁️ ';
+}
+
+/* Widget Empty State */
+.widget-empty {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #94a3b8;
+}
+
+.widget-empty svg,
+.widget-empty .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.widget-empty p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Widget Loading State */
+.widget-loading {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.widget-loading .spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f1f5f9;
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .sidebar-widget {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .widget-title {
+        font-size: 1.1rem;
+    }
+    
+    .popular-post-item .post-thumb {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .popular-post-item h4,
+    .popular-software-item h4,
+    .popular-game-item h4 {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-widget {
+        padding: 1rem;
+    }
+    
+    .popular-post-item .post-thumb {
+        width: 60px;
+        height: 60px;
+    }
+}

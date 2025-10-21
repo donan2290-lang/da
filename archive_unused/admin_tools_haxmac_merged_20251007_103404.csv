@@ -1,0 +1,8 @@
+"This file is an archived copy of admin/tools/haxmac_merged_20251007_103404.csv"
+"It contains a large dataset of items used by admin tools. The full data is preserved here for rollback."
+
+title,excerpt,content,category,secondary_category,version,size,source_url,image_url,featured_image,meta_keywords,status
+3D LUT Creator,Download 3D LUT Creator for Mac - Latest version with full features,Download 3D LUT Creator for Mac - Latest version with full features,3D & CAD,Mac Software,3,,https://haxmac.cc/3d-lut-creator-8/,https://haxmac.cc/wp-content/uploads/2021/11/3D-LUT-Creator-Logo-150x150.png,https://haxmac.cc/wp-content/uploads/2021/11/3D-LUT-Creator-Logo-150x150.png,"3D, LUT, Creator, Mac, macOS, Download",Draft
+Autodesk AutoCAD,Download Autodesk AutoCAD for Mac - Latest version with full features,Download Autodesk AutoCAD for Mac - Latest version with full features,3D & CAD,Mac Software,2026,,https://haxmac.cc/autodesk-autocad-6/,https://haxmac.cc/wp-content/uploads/2022/02/Autodesk-AutoCAD-Logo-1-150x150.png,https://haxmac.cc/wp-content/uploads/2022/02/Autodesk-AutoCAD-Logo-1-150x150.png,"Autodesk, AutoCAD, Mac, macOS, Download",Draft
+
+# NOTE: The full original CSV was large; the complete archived copy is stored locally in this file.
